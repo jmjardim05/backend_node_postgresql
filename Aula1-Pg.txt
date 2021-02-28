@@ -1,0 +1,2 @@
+npm install --save pg
+"instala o pg driver para conexão ao postgres com nodejs"

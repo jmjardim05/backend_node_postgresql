@@ -1,0 +1,19 @@
+{
+  "name": "nodejs_postgresql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "digital-innovation-one",
+    "node-js",
+    "postgresql"
+  ],
+  "author": "João Marcos Jardim",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.5.1"
+  }
+}
