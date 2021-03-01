@@ -1,2 +1,17 @@
 npm install --save pg
 "instala o pg driver para conexão ao postgres com nodejs"
+
+require("pg");
+
+const client = new pg.Client({ user, host, password, database, port })
+
+"fluxo para executar comandos"
+client.connect();
+client.query("SELECT, INSERT, UPDATE, CREATE....");
+cliente.end();
+
+
+-- ORM com Sequelize
+
+npm install --save sequelize
+"instala o ORM sequelize compatível com PostgreSQL"
