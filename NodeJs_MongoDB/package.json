@@ -1,0 +1,28 @@
+{
+  "name": "nodejs_mongodb",
+  "version": "1.0.0",
+  "description": "Exemplo Node.js com MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmjardim05/backend_node_postgresql.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "digital-innovation-one"
+  ],
+  "author": "João Marcos Jardim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmjardim05/backend_node_postgresql/issues"
+  },
+  "homepage": "https://github.com/jmjardim05/backend_node_postgresql#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.19"
+  }
+}

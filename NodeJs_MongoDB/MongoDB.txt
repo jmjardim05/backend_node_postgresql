@@ -1,0 +1,16 @@
+MONGODB
+
+dados em documentos (JSON)
+tabelas são chamadas de "collections"
+um banco de dados mongodb é um conjunto de collections
+
+Funcionalidades
+Sharding: permitie dividir os dados em mais de um servidor
+Capped collections: collections com tamanho pré-deifindo e conteúdo rotativo (ex: tabelas temporárias para carga)
+
+MONGOOSE
+
+solução baseada em schema para modelar os dados
+sistema de conversão de tipos
+mapeameto de objetos mongodb
+traduz os dados para objetos javascript
