@@ -17,15 +17,20 @@ const usersSchema = new mongoose.Schema(
         timestamps: { createdAt: true, updatedAt: true }, // cria os campos de log, data da criação e ultima alteração
         toJSON: { // opções para conversao em JSON
             virtuals: true,
-            transform(doc, ret) {
+            transform(doc, ret) { //regras de conversão do documento para JSON
                 ret.id = ret._id
                 delete ret._id
             }
         },
-        versionKey: false, // faz com que o mogoose não versione os documentos, é true por padrão
+        // versionKey: false, // faz com que o mogoose não versione os documentos, é true por padrão
+        // não declarar explicitamente se vc quer que o version key seja true
         optimisticConcurrency: true // verifica antes de salvar se não houve alteração no documento
     }
 );
+
+usersSchema.virtual("fullName").get(function() {
+    return this.firstName + " " + this.lastName;
+});
 
 const UserModel = mongoose.model("User", usersSchema);
 
