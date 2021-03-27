@@ -10,15 +10,22 @@ const express = require("express");
 // importar a rota de usuários
 const userRoute = require("./routes/userRoute");
 
+// importar a rota de posts
+const postRoute = require("./routes/postRoute");
+
 // cria uma constante para acessar os métodos do express
 const app = express();
 
 // adiciona o middleware para receber requisições em json
 app.use(express.json());
 
-//registra a rota users
+// registra a rota users
 userRoute(app);
 
+// registra a rota posts
+postRoute(app);
+
+// conrcta mo MongoDB / importado de ./config/database.js
 connect();
 
 // inicia o servidor web
